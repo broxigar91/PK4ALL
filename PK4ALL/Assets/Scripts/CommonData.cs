@@ -122,4 +122,61 @@ namespace CommonData {
         URBAN,
         WATERSEDGE
     }
+
+    public struct Evolution
+    {
+        int monsterToEvolve;
+        EvolutionMethod method;
+        int methodParameter; //this can be a lvl, an item, a happiness lvl...
+        
+    }
+
+    public enum EvolutionMethod
+    {
+        LEVEL,
+        LEVELMALE,
+        LEVELFEMALE,
+        LEVELDAY,
+        LEVELNIGHT,
+        DAYHOLDITEM,
+        NIGHTHOLDITEM,
+        HASMOVE,
+        BEAUTY,
+        HASINPARTY,
+        LEVELDARKINPARTY,
+        ATTACKGREATER,
+        ATKDEFEQUAL,
+        DEFENSEGREATER,
+        SILCOON,
+        CASCOON,
+        NINJASK,
+        SHEDINJA,
+        LEVELRAIN,
+        LOCATION,
+        HAPPINESS,
+        HAPPINESSDAY,
+        HAPPINESSNIGHT,
+        HAPPINESMOVETYPE,
+        ITEM,
+        ITEMMALE,
+        ITEMFEMALE,
+        TRADEITEM,
+        TRADESPECIES
+    }
+
+    public enum Nature
+    {
+
+    }
+
+    public enum Status
+    {
+        HEALTHY,
+        SLEEP,
+        POISON,
+        BURN,
+        PARALYSIS,
+        FROZEN
+    }
+
 }

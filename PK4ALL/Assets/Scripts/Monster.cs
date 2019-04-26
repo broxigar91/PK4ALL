@@ -5,6 +5,7 @@ using CommonData;
 
 //Note when you read monster it mostly means pokemon, but due to the generalism of the code/game it will be called like this in case other collect monster game is done with this code
 
+[System.Serializable]
 public class Monster
 {
     int id; //national dex number
@@ -34,4 +35,8 @@ public class Monster
     Vector3Int Abilities;   //The int of the vector are references to the monster abilities
                             //a vector3Int is choosed because monsters only can have 3 Abilities maximum (2 + hidden one) so instead of a list we use a Vector3 which has a faster acces to its values. 
     List<int> eggMoves; //only for unevolved species
+
+    List<Evolution> evolutions; //A list of evolutions for the monster (it's a list because a monster can have multiple evolutive lines
+
+    //TODO --> TEMA DE LA CRIANZA Y DE LA FORMA https://essentialsdocs.fandom.com/wiki/Defining_a_species
 }
