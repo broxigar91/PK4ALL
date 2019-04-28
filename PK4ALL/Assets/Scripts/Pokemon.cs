@@ -5,9 +5,10 @@ using CommonData;
 
 public class Pokemon : MonoBehaviour
 {
-    Monster species;
+    public Monster species;
     public string pokemonName;
     public int lvl;
+    int maxlvl = 100;
     public int currentExp;
     public int abilty;
     byte abilityIndex; //0= nartural1, 1= natural2, 2= hidden
@@ -32,8 +33,30 @@ public class Pokemon : MonoBehaviour
     public byte statusCount;
     public int currentEggSteps;
 
+    //moves
 
 
+    PokeballType pokeballUsed;
+    int heldItem;
+
+    //mail
+    EV currentEV;
+    byte pokerus;
+    bool fused; //only for kyurem
+
+    int trainerID;
+    bool foreing;
+
+    #region OBTAINATION INFO
+    ObtainMode obtainMode;
+    int obtainMap;
+    int obtainLvl;
+    int hatchedMap;
+    string obtainText;
+    #endregion
+
+    Languaje languaje;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -45,5 +68,25 @@ public class Pokemon : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Heal(int hpToRestore)
+    {
+        currentHp += hpToRestore;
+
+        if (currentHp > totalHp)
+            currentHp = totalHp;
+    }
+
+    /*Recalculates the Pokémon's stats (total HP, Attack, Defense, etc.).
+
+      Used when creating a Pokémon or egg, 
+      when an egg hatches, 
+      when a Pokémon's level/species/nature/gender/shininess changes, 
+      when an EV-modifying item is used, and when a Pokémon's form changes. 
+     */
+    public void CalcStats()
+    {
+
     }
 }
