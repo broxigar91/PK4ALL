@@ -34,7 +34,7 @@ public class Pokemon : MonoBehaviour
     public int currentEggSteps;
 
     //moves
-
+    public List<PokemonMove> moves = new List<PokemonMove>(4);
 
     PokeballType pokeballUsed;
     int heldItem;

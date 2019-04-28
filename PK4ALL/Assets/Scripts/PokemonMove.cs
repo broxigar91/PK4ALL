@@ -24,5 +24,16 @@ public class PokemonMove
 
         return false;
     }
+
+    public bool canUse()
+    {
+        return (currentPP != 0) ? true : false;
+    }
+
+    public void Use()//maybe this needs a change due to curse move (if it's affected by)
+    {
+        if (currentPP > 0)
+            currentPP--;
+    }
     
 }
