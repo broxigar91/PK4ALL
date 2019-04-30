@@ -322,6 +322,56 @@ namespace CommonData {
         SINGLE_OPPOSING_DIRECTLY_OPPOSITE
     }
 
+    public enum Pocket
+    {
+        ITEMS,
+        MEDICINE,
+        BALLS,
+        TMHM,
+        BERRIES,
+        MAIL,
+        BATTLEITEMS,
+        KEYITEMS
+    }
+
+    public enum UsabilityOutsideBattle
+    {
+        CANNOT_USE,
+        USE_ON_MONSTER_AND_DISSAPEAR,//The item can be used on a Pokémon, and disappears after use (e.g. Potions, Elixirs). The party screen will appear when using this item, allowing you to choose the Pokémon to use it on. Not for TMs and HMs, though. 
+        CANNOT_USE_ON_MONSTER,//The item can be used out of battle, but it isn't used on a Pokémon (e.g. Repel, Escape Rope, usable Key Items). 
+        TM,
+        HM,
+        USE_ON_MONSTER_AND_NOT_DISSAPEAR //The item can be used on a Pokémon (like 1), but it does not disappear after use (e.g. Poké Flute)
+    }
+
+    //put comments
+    public enum UsabilityInBattle
+    {
+        CANNOT_USE,
+        USE_ON_MONSTER_AND_DISSAPEAR,
+        BALL,
+        USE_ON_MONSTER_AND_NOT_DISSAPEAR,
+        CAN_USE
+    }
+
+    //put comments
+    public enum SpecialItems
+    {
+        NONE,
+        MAIL,
+        MAIL2,
+        SNAGBALL,
+        BALL,
+        BERRY,
+        KEYITEM,
+        EVOLUTION_STONE,
+        FOSSIL,
+        APRICORN,
+        ELEMENTAL_POWER_RAISING_GEM,
+        MULCH_FOR_BERRY_PATCHES,
+        MEGASTONE
+    }
+
     [Serializable]
     public class IntIntDictionary : SerializableDictionary<int, int> { }
 
