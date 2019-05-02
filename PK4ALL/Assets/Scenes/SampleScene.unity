@@ -238,9 +238,23 @@ MonoBehaviour:
     internalName: Bulbasaur
     type1: 9
     type2: 13
+    baseStats:
+      hp: 45
+      atk: 49
+      def: 49
+      speed: 45
+      spatk: 65
+      spdef: 65
     genderRate: 0
     growthRate: 0
     baseExp: 35
+    effortPoints:
+      hp: 0
+      atk: 0
+      def: 0
+      speed: 0
+      spatk: 0
+      spdef: 0
     rareness: 20
     happiness: 255
     moves:
@@ -256,20 +270,28 @@ MonoBehaviour:
     dexEntry: 1
     Abilities: {x: 0, y: 0, z: 0}
     eggMoves: 
+    evolutions: []
   pokemonName: Capullito
   lvl: 5
   currentExp: 0
   abilty: 0
   gender: 0
-  nature: 0
-  isShiny: 1
-  currentHp: 12
-  totalHp: 12
-  attack: 5
-  defense: 5
-  speed: 5
-  spattack: 5
-  spdefense: 5
+  nature:
+    nature: 2
+    hp: 1
+    atk: 1
+    def: 1
+    speed: 1
+    spatk: 1
+    spdef: 1
+  isShiny: 0
+  currentHp: 0
+  totalHp: 0
+  attack: 0
+  defense: 0
+  speed: 0
+  spattack: 0
+  spdefense: 0
   currentHappiness: 255
   currentStatus: 0
   statusCount: 0
@@ -315,6 +337,22 @@ MonoBehaviour:
       accuracy: 0
       totalPP: 0
     currentPP: 0
+  pokeballUsed: 0
+  heldItem: 0
+  currentEV:
+    hp: 0
+    atk: 0
+    def: 0
+    speed: 0
+    spatk: 0
+    spdef: 0
+  currentIV:
+    hp: 0
+    atk: 0
+    def: 0
+    speed: 0
+    spatk: 0
+    spdef: 0
 --- !u!4 &2135622468
 Transform:
   m_ObjectHideFlags: 0

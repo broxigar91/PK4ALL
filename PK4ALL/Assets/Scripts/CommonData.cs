@@ -27,16 +27,6 @@ namespace CommonData {
         WATER
     }
 
-    public struct BaseStats
-    {
-        byte hp;
-        byte atk;
-        byte def;
-        byte speed;
-        byte spatk;
-        byte spdef;
-    }
-
     public enum GenderRate
     {
         ALWAYSMALE,
@@ -65,163 +55,6 @@ namespace CommonData {
         ERRATIC,
         FLUCTUATING
     }
-
-    public struct EV
-    {
-        byte hp;
-        byte atk;
-        byte def;
-        byte speed;
-        byte spatk;
-        byte spdef;
-    }
-
-    public struct IV
-    {
-        byte hp;
-        byte atk;
-        byte def;
-        byte speed;
-        byte spatk;
-        byte spdef;
-    }
-
-    public enum EggGroup
-    {
-        MONSTER,
-        WATER1, //sea creatures
-        BUG,
-        FLYING,
-        FIELD,
-        FAIRY,
-        GRASS,
-        HUMANLIKE,
-        WATER3, //shellfish
-        MINERAL,
-        AMORPHOUS,
-        WATER2, //fish
-        DITTO,
-        DRAGON,
-        UNDISCOVERED //cannot put eggs
-    }
-
-    public enum Color
-    {
-        BLACK,
-        BLUE,
-        BROWN,
-        GRAY,
-        GREEN,
-        PINK,
-        PURPLE,
-        RED,
-        WHITE,
-        YELLOW
-    }
-
-    public enum Shape
-    {
-        ONLYAHEAD,
-        SERPENTLIKE,
-        FISH,
-        HEADANDARMS,
-        HEADANDBASE,
-        BIPEDALWITHTAIL,
-        HEADANDLEGS,
-        QUADRUPED,
-        HASTWOWINGS,
-        TENTACLESORMULTIPLELEGS,
-        MULTIPLEFUSEDBODIES,
-        HUMANOID,
-        WINGEDINSECTOID,
-        INSECTOID
-    }
-
-    public enum Habitat
-    {
-        CAVE,
-        FOREST,
-        GRASSLAND,
-        MOUNTAIN,
-        RARE, //THIS OPTION CAN BE TAKEN AS ""UNKNOWN""
-        ROUGHTERRAIN,
-        SEA,
-        URBAN,
-        WATERSEDGE
-    }
-
-    public struct Evolution
-    {
-        int monsterToEvolve;
-        EvolutionMethod method;
-        int methodParameter; //this can be a lvl, an item, a happiness lvl...
-    }
-
-    public enum EvolutionMethod
-    {
-        LEVEL,
-        LEVELMALE,
-        LEVELFEMALE,
-        LEVELDAY,
-        LEVELNIGHT,
-        DAYHOLDITEM,
-        NIGHTHOLDITEM,
-        HASMOVE,
-        BEAUTY,
-        HASINPARTY,
-        LEVELDARKINPARTY,
-        ATTACKGREATER,
-        ATKDEFEQUAL,
-        DEFENSEGREATER,
-        SILCOON,
-        CASCOON,
-        NINJASK,
-        SHEDINJA,
-        LEVELRAIN,
-        LOCATION,
-        HAPPINESS,
-        HAPPINESSDAY,
-        HAPPINESSNIGHT,
-        HAPPINESMOVETYPE,
-        ITEM,
-        ITEMMALE,
-        ITEMFEMALE,
-        TRADEITEM,
-        TRADESPECIES
-    }
-
-    public enum Nature
-    {
-
-    }
-
-    public enum Status
-    {
-        HEALTHY,
-        SLEEP,
-        POISON,
-        BURN,
-        PARALYSIS,
-        FROZEN
-    }
-
-    public enum PokeballType
-    {
-
-    }
-
-    public struct BeautyStats
-    {
-        byte beauty;
-        byte cool;
-        byte cute;
-        byte smart;
-        byte tough;
-        byte sheen;
-    }
-
-    //markings
-    //ribbons
 
     public enum ObtainMode
     {
@@ -277,7 +110,7 @@ namespace CommonData {
         C019, //All Pokémon in the user's party are cured of their permanent status problems (doesn't affect confusion, etc.). 
         C01A, //For 5 rounds (including the current round), Pokémon on the user's side cannot be given a status problem by any outside attacks or items (except held items). Status problems can still be self-inflicted. Fails if the user's side is already being affected by this effect.
         C01B, //The target gains the permanent status problem of the user (bad poisoning is passed across). If it does, the user's permanent status problem is cured. Fails if the target already has a permanent status problem, or if it can't be inflicted with the user's permanent status problem. 
-        
+
         //Changes user's stat stages
         C01C, //Increases the user's Attack by 1 stage. 
         C01D, //Increases the user's Defense by 1 stage. 
@@ -371,6 +204,195 @@ namespace CommonData {
         MULCH_FOR_BERRY_PATCHES,
         MEGASTONE
     }
+
+    public enum EggGroup
+    {
+        MONSTER,
+        WATER1, //sea creatures
+        BUG,
+        FLYING,
+        FIELD,
+        FAIRY,
+        GRASS,
+        HUMANLIKE,
+        WATER3, //shellfish
+        MINERAL,
+        AMORPHOUS,
+        WATER2, //fish
+        DITTO,
+        DRAGON,
+        UNDISCOVERED //cannot put eggs
+    }
+
+    public enum Color
+    {
+        BLACK,
+        BLUE,
+        BROWN,
+        GRAY,
+        GREEN,
+        PINK,
+        PURPLE,
+        RED,
+        WHITE,
+        YELLOW
+    }
+
+    public enum Shape
+    {
+        ONLYAHEAD,
+        SERPENTLIKE,
+        FISH,
+        HEADANDARMS,
+        HEADANDBASE,
+        BIPEDALWITHTAIL,
+        HEADANDLEGS,
+        QUADRUPED,
+        HASTWOWINGS,
+        TENTACLESORMULTIPLELEGS,
+        MULTIPLEFUSEDBODIES,
+        HUMANOID,
+        WINGEDINSECTOID,
+        INSECTOID
+    }
+
+    public enum Habitat
+    {
+        CAVE,
+        FOREST,
+        GRASSLAND,
+        MOUNTAIN,
+        RARE, //THIS OPTION CAN BE TAKEN AS ""UNKNOWN""
+        ROUGHTERRAIN,
+        SEA,
+        URBAN,
+        WATERSEDGE
+    }
+
+    public enum EvolutionMethod
+    {
+        LEVEL,
+        LEVELMALE,
+        LEVELFEMALE,
+        LEVELDAY,
+        LEVELNIGHT,
+        DAYHOLDITEM,
+        NIGHTHOLDITEM,
+        HASMOVE,
+        BEAUTY,
+        HASINPARTY,
+        LEVELDARKINPARTY,
+        ATTACKGREATER,
+        ATKDEFEQUAL,
+        DEFENSEGREATER,
+        SILCOON,
+        CASCOON,
+        NINJASK,
+        SHEDINJA,
+        LEVELRAIN,
+        LOCATION,
+        HAPPINESS,
+        HAPPINESSDAY,
+        HAPPINESSNIGHT,
+        HAPPINESMOVETYPE,
+        ITEM,
+        ITEMMALE,
+        ITEMFEMALE,
+        TRADEITEM,
+        TRADESPECIES
+    }
+
+    public enum Natures
+    {
+        ADAMANT,
+        BOLD,
+        TIMID
+    }
+
+    public enum Status
+    {
+        HEALTHY,
+        SLEEP,
+        POISON,
+        BURN,
+        PARALYSIS,
+        FROZEN
+    }
+
+    public enum PokeballType
+    {
+
+    }
+
+    [Serializable]
+    public struct Evolution
+    {
+        int monsterToEvolve;
+        EvolutionMethod method;
+        int methodParameter; //this can be a lvl, an item, a happiness lvl...
+    }
+
+    [Serializable]
+    public struct BaseStats
+    {
+        public byte hp;
+        public byte atk;
+        public byte def;
+        public byte speed;
+        public byte spatk;
+        public byte spdef;
+    }
+
+    [Serializable]
+    public struct Nature
+    {
+        public Natures nature;
+
+        //MODIFIERS
+        public float hp;
+        public float atk;
+        public float def;
+        public float speed;
+        public float spatk;
+        public float spdef;
+    }
+
+    [Serializable]
+    public struct BeautyStats
+    {
+        public byte beauty;
+        public byte cool;
+        public byte cute;
+        public byte smart;
+        public byte tough;
+        public byte sheen;
+    }
+
+    //markings
+    //ribbons
+
+    [Serializable]
+    public struct EV
+    {
+        public byte hp;
+        public byte atk;
+        public byte def;
+        public byte speed;
+        public byte spatk;
+        public byte spdef;
+    }
+
+    [Serializable]
+    public struct IV
+    {
+        public byte hp;
+        public byte atk;
+        public byte def;
+        public byte speed;
+        public byte spatk;
+        public byte spdef;
+    }
+
 
     [Serializable]
     public class IntIntDictionary : SerializableDictionary<int, int> { }

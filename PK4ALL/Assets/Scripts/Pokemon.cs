@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using CommonData;
 
+
 public class Pokemon : MonoBehaviour
 {
     public Monster species;
@@ -36,11 +37,12 @@ public class Pokemon : MonoBehaviour
     //moves
     public List<PokemonMove> moves;
 
-    PokeballType pokeballUsed;
-    int heldItem;
+    public PokeballType pokeballUsed;
+    public int heldItem;
 
     //mail
-    EV currentEV;
+    public EV currentEV;
+    public IV currentIV;
     byte pokerus;
     bool fused; //only for kyurem
 
@@ -61,7 +63,7 @@ public class Pokemon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        CalcStats();
     }
 
     // Update is called once per frame
@@ -87,6 +89,27 @@ public class Pokemon : MonoBehaviour
      */
     public void CalcStats()
     {
+        totalHp = CalcHp();
+        attack = CalcStat(species.baseStats.atk,currentIV.atk,currentEV.atk, nature.atk);
+        defense = CalcStat(species.baseStats.def, currentIV.def, currentEV.def, nature.def);
+        speed = CalcStat(species.baseStats.speed, currentIV.speed, currentEV.speed, nature.speed);
+        spattack = CalcStat(species.baseStats.spatk, currentIV.spatk, currentEV.spatk, nature.spatk);
+        spdefense = CalcStat(species.baseStats.spdef, currentIV.spdef, currentEV.spdef, nature.spdef);
+    }
 
+    public int CalcHp()
+    {
+        int baseHp = species.baseStats.hp;
+
+        if (baseHp == 1)
+            return 1;
+
+        return Mathf.FloorToInt((baseHp * 2 + currentIV.hp + Mathf.FloorToInt(currentEV.hp / 4)) * lvl / 100) + lvl + 10;
+    }
+
+    public int CalcStat(int baseStat, int iv, int ev, float natureModifier)
+    {
+
+        return Mathf.FloorToInt((Mathf.FloorToInt((2 * baseStat + iv + Mathf.FloorToInt(ev / 4)) * lvl / 100) + 5) * natureModifier);
     }
 }
