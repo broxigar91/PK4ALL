@@ -272,7 +272,7 @@ MonoBehaviour:
     eggMoves: 
     evolutions: []
   pokemonName: Capullito
-  lvl: 5
+  lvl: 1
   currentExp: 0
   abilty: 0
   gender: 0
