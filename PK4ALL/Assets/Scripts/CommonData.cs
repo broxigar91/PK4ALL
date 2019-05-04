@@ -366,7 +366,7 @@ namespace CommonData {
     }
 
     [Serializable]
-    public class Nature
+    public struct Nature
     {
         public Natures nature;
 

@@ -6,7 +6,7 @@ using System;
 using System.IO;
 
 [Serializable]
-public class NatureDB
+public struct NatureDB
 {
     public List<Nature> natureDB;
 }
