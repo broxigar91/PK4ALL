@@ -6,7 +6,7 @@ using System;
 using System.IO;
 
 [Serializable]
-public struct NatureDB
+public class NatureDB
 {
     public List<Nature> natureDB;
 }
@@ -21,7 +21,8 @@ public class NatureDatabaseController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string datos = File.ReadAllText(Application.dataPath + "/Resources/itemdatabase.json"); //establezco la ruta donde se encuentra el fichero json
+        string datos = File.ReadAllText(Application.dataPath + "/Resources/natures.json"); //establezco la ruta donde se encuentra el fichero json
+        Debug.Log(datos);
         db = JsonUtility.FromJson<NatureDB>(datos);
     }
 

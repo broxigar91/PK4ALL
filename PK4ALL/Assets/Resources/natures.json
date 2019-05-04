@@ -1,44 +1,256 @@
 {
   "natureDB": [
-    { //Adamant
-      "nature" : 0,
-      "hp": 1,
+    {
+      "": "Adamant",
+      "nature": 0,
+      "hp": 1.0,
       "atk": 1.1,
-
-
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 0.9,
+      "spdef": 1.0
     },
-    { //Bashful
-      1
+    {
+      "": "Bashful",
+      "nature": 1.0,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.0
     },
-    { //Bold
-
+    {
+      "": "Bold",
+      "nature": 2,
+      "hp": 1.0,
+      "atk": 0.9,
+      "def": 1.1,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.0
     },
-    { //Brave
-
+    {
+      "": "Brave",
+      "nature": 3,
+      "hp": 1.0,
+      "atk": 1.1,
+      "def": 1.0,
+      "speed": 0.9,
+      "spatk": 1.0,
+      "spdef": 1.0
     },
-    { //Calm
-
+    {
+      "": "Calm",
+      "nature": 4,
+      "hp": 1.0,
+      "atk": 0.9,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.1
     },
-    { //Careful
-
+    {
+      "": "Careful",
+      "nature": 5,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 0.9,
+      "spdef": 1.1
     },
-    { //Docile
-
+    {
+      "": "Docile",
+      "nature": 6,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.0
     },
-    { //Gentle
-
+    {
+      "": "Gentle",
+      "nature": 7,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 0.9,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.1
     },
-    { //Hardy
-
+    {
+      "": "Hardy",
+      "nature": 8,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.0
     },
-    { //Hasty
-
+    {
+      "": "Hasty",
+      "nature": 9,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 0.9,
+      "speed": 1.1,
+      "spatk": 1.0,
+      "spdef": 1.0
     },
-    { //Impish
-
+    {
+      "": "Impish",
+      "nature": 10,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.1,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 0.9
     },
-    { //Jolly
-
+    {
+      "": "Jolly",
+      "nature": 11,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.1,
+      "spatk": 0.9,
+      "spdef": 1.0
+    },
+    {
+      "": "Lax",
+      "nature": 12,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.1,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.1
+    },
+    {
+      "": "Lonely",
+      "nature": 13,
+      "hp": 1.0,
+      "atk": 1.1,
+      "def": 0.9,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.0
+    },
+    {
+      "": "Mild",
+      "nature": 14,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 0.9,
+      "speed": 1.0,
+      "spatk": 1.1,
+      "spdef": 1.0
+    },
+    {
+      "": "Modest",
+      "nature": 15,
+      "hp": 1.0,
+      "atk": 0.9,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.1,
+      "spdef": 1.0
+    },
+    {
+      "": "Naive",
+      "nature": 16,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.1,
+      "spatk": 1.0,
+      "spdef": 0.9
+    },
+    {
+      "": "Naughty",
+      "nature": 17,
+      "hp": 1.0,
+      "atk": 1.1,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 0.9
+    },
+    {
+      "": "Quiet",
+      "nature": 18,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 0.9,
+      "spatk": 1.1,
+      "spdef": 1.0
+    },
+    {
+      "": "Quirky",
+      "nature": 19,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.0
+    },
+    {
+      "": "Rash",
+      "nature": 20,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.1,
+      "spdef": 0.9
+    },
+    {
+      "": "Relaxed",
+      "nature": 21,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.1,
+      "speed": 0.9,
+      "spatk": 1.0,
+      "spdef": 1.0
+    },
+    {
+      "": "Sassy",
+      "nature": 22,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 0.9,
+      "spatk": 1.0,
+      "spdef": 1.1
+    },
+    {
+      "": "Serious",
+      "nature": 23,
+      "hp": 1.0,
+      "atk": 1.0,
+      "def": 1.0,
+      "speed": 1.0,
+      "spatk": 1.0,
+      "spdef": 1.0
+    },
+    {
+      "": "Timid",
+      "nature": 24,
+      "hp": 1.0,
+      "atk": 0.9,
+      "def": 1.0,
+      "speed": 1.1,
+      "spatk": 1.0,
+      "spdef": 1.0
     }
   ]
 }
+
+
