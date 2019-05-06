@@ -12,20 +12,19 @@ public struct NatureDB
 }
 
 
-
-public class NatureDatabaseController : MonoBehaviour
+[Serializable]
+public class NatureDatabase
 {
-
     public NatureDB db;
     
-    // Start is called before the first frame update
-    void Start()
+    
+    public NatureDatabase(string dataPath)
     {
-        string datos = File.ReadAllText(Application.dataPath + "/Resources/natures.json"); //establezco la ruta donde se encuentra el fichero json
+        string datos = File.ReadAllText( dataPath + "/Resources/natures.json"); //establezco la ruta donde se encuentra el fichero json
         Debug.Log(datos);
         db = JsonUtility.FromJson<NatureDB>(datos);
     }
-
+       
     public Nature getNature(Natures nat)
     {
         return db.natureDB.Find(x => x.nature == nat);

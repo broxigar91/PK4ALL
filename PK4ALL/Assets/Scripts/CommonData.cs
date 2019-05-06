@@ -419,4 +419,8 @@ namespace CommonData {
     [Serializable]
     public class IntIntDictionary : SerializableDictionary<int, int> { }
 
+    [Serializable]
+    public class ItemListDictionary : SerializableDictionary.Storage<List<ItemBag>> { }
+    [Serializable]
+    public class PocketListDictionary : SerializableDictionary<Pocket,List<ItemBag>,ItemListDictionary> { }
 }
