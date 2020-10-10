@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 [Serializable]
-public class PokemonMove
+public class MonsterMove
 {
     public Move move;
     public byte currentPP;

@@ -1,14 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using CommonData;
 
-public class DataManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public static DataManager instance;
-
-    public ItemDatabase itemDB;
-    public NatureDatabase natureDB;
+    public static GameManager instance;
+    public Bag bag;
 
     // Start is called before the first frame update
     void Awake()
@@ -17,17 +14,13 @@ public class DataManager : MonoBehaviour
         {
             instance = this;
         }
-        else if(instance!=this)
+        else if(instance != this)
         {
             Destroy(gameObject);
         }
 
         DontDestroyOnLoad(gameObject);
-
-        string dataPath = Application.dataPath;
-
-        itemDB = new ItemDatabase(dataPath);
-        natureDB = new NatureDatabase(dataPath);
+        
     }
 
     // Update is called once per frame

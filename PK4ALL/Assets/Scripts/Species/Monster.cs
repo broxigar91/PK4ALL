@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using CommonData;
 
-
-public class Pokemon : MonoBehaviour
+[System.Serializable]
+public class Monster
 {
-    public Monster species;
+    public Specie species;
     public string pokemonName;
     public int lvl;
     int maxlvl = 100;
@@ -35,7 +35,7 @@ public class Pokemon : MonoBehaviour
     public int currentEggSteps;
 
     //moves
-    public List<PokemonMove> moves;
+    public List<MonsterMove> moves;
 
     public PokeballType pokeballUsed;
     public int heldItem;

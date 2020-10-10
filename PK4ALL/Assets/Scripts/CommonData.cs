@@ -5,7 +5,7 @@ using System;
 
 namespace CommonData {
 
-    public enum Type
+    public enum Types
     {
         BUG,
         DARK,
@@ -413,6 +413,17 @@ namespace CommonData {
         public byte speed;
         public byte spatk;
         public byte spdef;
+    }
+
+    [Serializable]
+    public struct Type
+    {
+        public Types id;
+        public string typeName;
+        //bool isSpecialType;
+        public List<Types> weaknesses;
+        public List<Types> resistances;
+        public List<Types> immunities;
     }
 
 

@@ -6,7 +6,7 @@ using CommonData;
 //Note when you read monster it mostly means pokemon, but due to the generalism of the code/game it will be called like this in case other collect monster game is done with this code
 
 [System.Serializable]
-public class Monster    
+public class Specie    
 {
     public int id; //national dex number
     public string name;

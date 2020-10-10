@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public static GameManager instance;
+    public static Player instance;
+    public ushort trainerID;
+    
+
+    public Vector2 position;
 
     // Start is called before the first frame update
     void Awake()
@@ -19,7 +23,6 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-        
     }
 
     // Update is called once per frame

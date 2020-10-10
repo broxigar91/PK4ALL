@@ -149,7 +149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &26249826
 MonoBehaviour:
@@ -163,7 +163,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 400c6d54178682e41aee342c263309f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  natureDB: {fileID: 0}
+  itemDB:
+    db:
+      items: []
+  natureDB:
+    db:
+      natureDB: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,168 +251,4 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2135622466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2135622468}
-  - component: {fileID: 2135622467}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2135622467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135622466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505c3e08cb3e04f40987d5f4a8aab96b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  species:
-    id: 1
-    name: Bulbasaur
-    internalName: Bulbasaur
-    type1: 9
-    type2: 13
-    baseStats:
-      hp: 45
-      atk: 49
-      def: 49
-      speed: 45
-      spatk: 65
-      spdef: 65
-    genderRate: 0
-    growthRate: 0
-    baseExp: 35
-    effortPoints:
-      hp: 0
-      atk: 0
-      def: 0
-      speed: 0
-      spatk: 0
-      spdef: 0
-    rareness: 20
-    happiness: 255
-    moves:
-      m_keys: 
-      m_values: 
-    eggGroup: 6
-    stepsToHatch: 0
-    height: 0
-    weight: 0
-    color: 4
-    shape: 0
-    kind: 
-    dexEntry: 1
-    Abilities: {x: 0, y: 0, z: 0}
-    eggMoves: 
-    evolutions: []
-  pokemonName: Capullito
-  lvl: 1
-  currentExp: 0
-  abilty: 0
-  gender: 0
-  nature:
-    nature: 2
-    hp: 1
-    atk: 1
-    def: 1
-    speed: 1
-    spatk: 1
-    spdef: 1
-  isShiny: 0
-  currentHp: 0
-  totalHp: 0
-  attack: 0
-  defense: 0
-  speed: 0
-  spattack: 0
-  spdefense: 0
-  currentHappiness: 255
-  currentStatus: 0
-  statusCount: 0
-  currentEggSteps: 0
-  moves:
-  - move:
-      id: 0
-      displayName: Placaje
-      moveCode: 0
-      basePower: 0
-      type: 0
-      damageCategory: 0
-      accuracy: 0
-      totalPP: 0
-    currentPP: 0
-  - move:
-      id: 0
-      displayName: "L\xE1tigo"
-      moveCode: 0
-      basePower: 0
-      type: 0
-      damageCategory: 0
-      accuracy: 0
-      totalPP: 0
-    currentPP: 0
-  - move:
-      id: 0
-      displayName: 
-      moveCode: 0
-      basePower: 0
-      type: 0
-      damageCategory: 0
-      accuracy: 0
-      totalPP: 0
-    currentPP: 0
-  - move:
-      id: 0
-      displayName: 
-      moveCode: 0
-      basePower: 0
-      type: 0
-      damageCategory: 0
-      accuracy: 0
-      totalPP: 0
-    currentPP: 0
-  pokeballUsed: 0
-  heldItem: 0
-  currentEV:
-    hp: 0
-    atk: 0
-    def: 0
-    speed: 0
-    spatk: 0
-    spdef: 0
-  currentIV:
-    hp: 0
-    atk: 0
-    def: 0
-    speed: 0
-    spatk: 0
-    spdef: 0
---- !u!4 &2135622468
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135622466}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
